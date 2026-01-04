@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Sehat Utama - Layanan Kesehatan Terpercaya</title>
+    <meta name="description" content="Klinik Sehat Utama menyediakan layanan kesehatan lengkap dengan dokter spesialis berpengalaman dan fasilitas modern.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styless.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="text-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 fw-bold text-primary">Memuat Halaman...</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="fas fa-heartbeat me-2"></i>Klinik Sehat Utama
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Dokter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2 px-4 shadow-sm" href="#contact">Buat Janji</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center fade-in">
+            <span class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill shadow-sm">
+                <i class="fas fa-star me-1"></i> Layanan Medis Terpercaya No. 1
+            </span>
+            <h1 class="display-4 fw-bold text-dark mb-4 hero-title">Kesehatan Keluarga Adalah<br><span class="text-primary">Prioritas Utama Kami</span></h1>
+            <p class="lead text-secondary mb-5 fs-5 mx-auto" style="max-width: 700px;">
+                Kami hadir melayani dengan hati, didukung tim medis profesional dan teknologi terkini untuk memastikan kesehatan optimal bagi Anda dan keluarga.
+            </p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                <a href="#contact" class="btn btn-primary btn-lg px-5 py-3 shadow-sm rounded-pill hover-top">
+                    <i class="fas fa-calendar-check me-2"></i>Buat Janji Temu
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill hover-top">
+                    <i class="fab fa-whatsapp me-2"></i>Konsultasi WA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 position-relative">
+                    <div class="experience-badge">
+                        <span class="fw-bold fs-2">15+</span><br>Tahun Pengalaman
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1516549655669-dfcd871a6c3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Tentang Klinik" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h5 class="text-primary fw-bold text-uppercase ls-1">Tentang Kami</h5>
+                    <h2 class="fw-bold mb-4">Mengapa Memilih Klinik Sehat Utama?</h2>
+                    <p class="lead mb-4 text-muted">Kami berkomitmen memberikan standar pelayanan medis internasional dengan pendekatan yang humanis dan ramah.</p>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle me-3">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <span class="fw-semibold">Dokter Spesialis</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle me-3">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <span class="fw-semibold">Lab Modern</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle me-3">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <span class="fw-semibold">Layanan 24 Jam</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle me-3">
+                                    <i class="fas fa-file-medical"></i>
+                                </div>
+                                <span class="fw-semibold">BPJS & Asuransi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="text-primary fw-bold text-uppercase">Layanan Kami</h5>
+                <h2 class="fw-bold">Solusi Kesehatan Menyeluruh</h2>
+                <p class="text-muted">Kami menyediakan berbagai layanan medis terintegrasi dalam satu atap.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card p-4 text-center">
+                        <div class="service-icon mb-3 mx-auto bg-blue-100 text-primary">
+                            <i class="fas fa-stethoscope fa-2x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Pemeriksaan Umum</h4>
+                        <p class="text-muted small">Diagnosa dan pengobatan penyakit umum untuk dewasa dan lansia.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card p-4 text-center">
+                        <div class="service-icon mb-3 mx-auto bg-blue-100 text-primary">
+                            <i class="fas fa-tooth fa-2x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Poli Gigi</h4>
+                        <p class="text-muted small">Pembersihan karang gigi, tambal, cabut, hingga perawatan estetika.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card p-4 text-center">
+                        <div class="service-icon mb-3 mx-auto bg-blue-100 text-primary">
+                            <i class="fas fa-baby fa-2x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Poli Anak</h4>
+                        <p class="text-muted small">Imunisasi lengkap dan pemantauan tumbuh kembang buah hati.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm service-card p-4 text-center">
+                        <div class="service-icon mb-3 mx-auto bg-blue-100 text-primary">
+                            <i class="fas fa-heartbeat fa-2x"></i>
+                        </div>
+                        <h4 class="h5 fw-bold mb-2">Poli Jantung</h4>
+                        <p class="text-muted small">EKG dan konsultasi spesialis jantung koroner dan hipertensi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctors" class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h5 class="text-primary fw-bold text-uppercase">Tim Medis</h5>
+                    <h2 class="fw-bold">Dokter Spesialis Kami</h2>
+                </div>
+                <a href="#contact" class="btn btn-outline-primary d-none d-md-block">Lihat Jadwal Lengkap</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card doctor-card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 class="card-img-top" alt="Dr. Budi">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold mb-1">Dr. Budi Santoso, Sp.PD</h5>
+                            <p class="text-primary small fw-bold mb-2">SPESIALIS PENYAKIT DALAM</p>
+                            <span class="badge bg-light text-dark border">Senin - Jumat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card doctor-card h-100 border-0 shadow-sm">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 class="card-img-top" alt="Dr. Siti">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold mb-1">Dr. Siti Aminah, Sp.KG</h5>
+                            <p class="text-primary small fw-bold mb-2">DOKTER GIGI</p>
+                            <span class="badge bg-light text-dark border">Selasa - Sabtu</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Kata Pasien Kami</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 bg-light">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Pelayanan sangat ramah dan cepat. Dr. Budi menjelaskan penyakit saya dengan sangat detail dan mudah dimengerti."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">R</div>
+                            <div class="ms-3">
+                                <h6 class="mb-0 fw-bold">Rina Wati</h6>
+                                <small class="text-muted">Pasien Umum</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 bg-light">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic">"Fasilitas poli gigi sangat modern dan bersih. Anak saya tidak takut lagi ke dokter gigi berkat Dr. Siti."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">A</div>
+                            <div class="ms-3">
+                                <h6 class="mb-0 fw-bold">Ahmad Fauzi</h6>
+                                <small class="text-muted">Orang Tua Pasien</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 bg-light">
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="fst-italic">"Proses pendaftaran online sangat membantu, tidak perlu antre lama di lokasi. Sangat direkomendasikan."</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px;">D</div>
+                            <div class="ms-3">
+                                <h6 class="mb-0 fw-bold">Dimas Anggara</h6>
+                                <small class="text-muted">Check-up Rutin</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Pertanyaan Umum (FAQ)</h2>
+                    </div>
+                    <div class="accordion shadow-sm" id="accordionFAQ">
+                        <div class="accordion-item border-0 mb-3 rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Apakah menerima BPJS Kesehatan?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Ya, Klinik Sehat Utama menerima pasien BPJS Kesehatan, serta berbagai asuransi swasta lainnya seperti Allianz, Prudential, dan Manulife.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Bagaimana cara membatalkan janji temu?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Anda dapat menghubungi nomor WhatsApp admin kami minimal 3 jam sebelum jadwal kunjungan untuk melakukan pembatalan atau penjadwalan ulang.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h5 class="text-primary fw-bold text-uppercase">Kontak Kami</h5>
+                    <h2 class="fw-bold mb-4">Butuh Bantuan Medis?</h2>
+                    <p class="mb-4 text-muted">Tim kami siap membantu Anda. Silakan isi formulir atau kunjungi lokasi kami.</p>
+                    
+                    <div class="contact-info bg-light p-4 rounded-4">
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box bg-white text-primary rounded-circle shadow-sm me-3 p-3">
+                                <i class="fas fa-map-marker-alt fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Lokasi</h6>
+                                <p class="text-muted mb-0">Jl. Kesehatan No. 123, Jakarta Pusat</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                        <div class="card-header bg-primary text-white py-4 px-4">
+                            <h4 class="mb-0 fw-bold"><i class="fas fa-calendar-plus me-2"></i>Form Janji Temu</h4>
+                        </div>
+                        <div class="card-body p-4 p-lg-5">
+                            <form id="appointmentForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label fw-semibold">Nama Lengkap</label>
+                                        <input type="text" class="form-control bg-light" id="name" required placeholder="Cth: Budi Santoso">
+                                        <div class="invalid-feedback" id="nameError"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label fw-semibold">WhatsApp / Telepon</label>
+                                        <input type="tel" class="form-control bg-light" id="phone" required placeholder="0812...">
+                                        <div class="invalid-feedback" id="phoneError"></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label fw-semibold">Email</label>
+                                        <input type="email" class="form-control bg-light" id="email" required>
+                                        <div class="invalid-feedback" id="emailError"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="service" class="form-label fw-semibold">Poli Tujuan</label>
+                                        <select class="form-select bg-light" id="service" required>
+                                            <option value="">Pilih Layanan...</option>
+                                            <option value="umum">Pemeriksaan Umum</option>
+                                            <option value="gigi">Poli Gigi</option>
+                                            <option value="anak">Poli Anak</option>
+                                            <option value="jantung">Poli Jantung</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="date" class="form-label fw-semibold">Tanggal Kunjungan</label>
+                                        <input type="date" class="form-control bg-light" id="date" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label fw-semibold">Keluhan</label>
+                                        <textarea class="form-control bg-light" id="message" rows="3" placeholder="Jelaskan keluhan singkat..."></textarea>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label small text-muted" for="terms">
+                                                Saya menyetujui data saya diproses untuk keperluan medis.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <button type="submit" class="btn btn-primary w-100 py-3 fw-bold shadow-sm hover-top">
+                                            Kirim Permintaan
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="alert alert-success mt-3 d-none rounded-3" id="successMessage"></div>
+                            <div class="alert alert-danger mt-3 d-none rounded-3" id="errorMessage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4 text-primary"><i class="fas fa-heartbeat me-2"></i>Klinik Sehat Utama</h4>
+                    <p class="text-secondary">Melayani sepenuh hati untuk kesehatan Indonesia yang lebih baik.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Lokasi Kami</h5>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.452631582967!2d106.81938931476897!3d-6.189568995518987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f42c6762391f%3A0x6787652750666066!2sMonas!5e0!3m2!1sid!2sid!4v1647833000000!5m2!1sid!2sid" 
+                        width="100%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Jam Operasional</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="d-flex justify-content-between mb-2"><span>Senin - Jumat</span> <span>08:00 - 21:00</span></li>
+                        <li class="d-flex justify-content-between mb-2"><span>Sabtu</span> <span>08:00 - 17:00</span></li>
+                        <li class="d-flex justify-content-between"><span>Minggu</span> <span class="text-danger">Tutup</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-secondary small">
+                &copy; <span id="year"></span> Klinik Sehat Utama. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow-lg"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
