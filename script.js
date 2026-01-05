@@ -1,3 +1,5 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // ==================== 1. ENFORCE HIGH CONTRAST (THE FIX) ====================
